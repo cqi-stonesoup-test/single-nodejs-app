@@ -96,7 +96,7 @@
             target="_blank">
             https://github.com/redhat-appstudio/infra-deployments
           </a>
-          <pre> ./hack/bootstrap.sh </pre>
+          <pre> ./hack/bootstrap-cluster.sh preview  </pre>
         </li>
         <div class="row">
           <li> Create an Application and a Component </li>
@@ -123,11 +123,11 @@
         git:
           url: https://github.com/jduimovich/single-nodejs-app
           devfileUrl: https://raw.githubusercontent.com/jduimovich/appstudio-e2e-demos/main/demos/single-nodejs-app/devfiles/devfile.yaml
-      build:
-        containerImage: quay.io/jduimovich0/single-nodejs-app
     </pre>
 
-          <li> Navigate to the topology viewer and your app will be running in your namespace.
+          <li> Stone soup will build and deploy your application. In the manage stone soup environment use the UI to browse to your running application.  
+
+            If are using CLI only to access, use `oc get routes` to find the URL to your application.
           </li> 
       </ol>
 
