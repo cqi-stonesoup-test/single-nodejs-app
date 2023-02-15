@@ -18,7 +18,7 @@ kind: Application
 metadata:
   name: single-nodejs-app
 spec:
-  description: "single-nodejs-app built in App Studio"
+  description: "single-nodejs-app built in Stone Soup"
   displayName: single-nodejs-app
 ```
   4.  Create an Component with the following yaml   
